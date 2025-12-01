@@ -7,19 +7,19 @@ phases:
 
   build:
     commands:
-      echo "Zipping LF1-index-photos..."
-      cd backend/LF1-index-photos
-      zip -r ../../../LF1.zip .
-      cd ../../..
+      - echo "Zipping LF1-index-photos..."
+      - cd backend/LF1-index-photos
+      - zip -r ../../LF1.zip .
+      - cd ../..
 
-      echo "Zipping LF2-search-photos..."
-      cd backend/LF2-search-photos
-      zip -r ../../../LF2.zip .
-      cd ../../..
+      - echo "Zipping LF2-search-photos..."
+      - cd backend/LF2-search-photos
+      - zip -r ../../LF2.zip .
+      - cd ../..
 
-      echo "listing directory tree"
-      pwd
-      ls -R .
+      - echo "=== DIRECTORY TREE ==="
+      - pwd
+      - ls -R .
 
 artifacts:
   files:
