@@ -17,7 +17,7 @@ phases:
       zip -r ../../../LF2.zip .
       cd ../../..
 
-      echo "DEBUG: listing directory tree"
+      echo "listing directory tree"
       pwd
       ls -R .
 
