@@ -24,4 +24,12 @@ phases:
 artifacts:
   files:
     - LF1.zip
-    - LF2.zip
+  name: BuildArtifactLF1
+  discard-paths: yes
+
+secondary-artifacts:
+  LF2Artifact:
+    files:
+      - LF2.zip
+    name: BuildArtifactLF2
+    discard-paths: yes
