@@ -1,0 +1,32 @@
+version: 0.2
+
+env:
+  variables:
+    LF1_NAME: "LF1-index-photos"
+    LF2_NAME: "LF2-search-photos"
+
+phases:
+  install:
+    runtime-versions:
+      python: latest
+    commands:
+      - echo "Installing dependencies..."
+
+  build:
+    commands:
+      - echo "Packaging LF1..."
+      - cd LF1-index-photos
+      - pip install -r requirements.txt -t .
+      - zip -r ../lf1.zip .
+      - cd ..
+
+      - echo "Packaging LF2..."
+      - cd LF2-search-photos
+      - pip install -r requirements.txt -t .
+      - zip -r ../lf2.zip .
+      - cd ..
+
+artifacts:
+  files:
+    - lf1.zip
+    - lf2.zip
