@@ -26,9 +26,9 @@ artifacts:
     - LF1.zip
   name: BuildArtifactLF1
   discard-paths: yes
-  
-  secondary-artifacts:
-  LF2Artifact:
+
+secondary-artifacts:
+  BuildArtifactLF2:
     files:
       - LF2.zip
     name: BuildArtifactLF2
