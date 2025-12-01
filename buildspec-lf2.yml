@@ -12,5 +12,5 @@ phases:
 
 artifacts:
   files:
-    - backend/LF2-search-photos/LF2.zip
+    - LF2.zip
   discard-paths: yes
