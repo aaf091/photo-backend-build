@@ -13,5 +13,5 @@ phases:
 
 artifacts:
   files:
-    - LF1.zip
+    - backend/LF1-index-photos/LF1.zip
   discard-paths: yes
