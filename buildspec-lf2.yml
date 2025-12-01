@@ -8,9 +8,9 @@ phases:
     commands:
       - echo "Building LF2 (search-photos)..."
       - cd backend/LF2-search-photos
-      - zip -r LF2.zip .
+      # zip -r LF2.zip .
 
 artifacts:
   files:
-    - backend/LF2-search-photos/LF2.zip
+    - backend/LF2-search-photos/lambda_function.py
   discard-paths: yes
