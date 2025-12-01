@@ -17,6 +17,10 @@ phases:
       zip -r ../../../LF2.zip .
       cd ../../..
 
+      echo "DEBUG: listing directory tree"
+      pwd
+      ls -R .
+
 artifacts:
   files:
     - LF1.zip
