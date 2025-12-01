@@ -8,8 +8,6 @@ phases:
     commands:
       - echo "Building LF1 (index-photos)..."
       - cd backend/LF1-index-photos
-      # install deps into the folder
-      - pip install -r requirements.txt -t .
       # zip everything
       - zip -r LF1.zip .
 
