@@ -9,9 +9,9 @@ phases:
       - echo "Building LF1 (index-photos)..."
       - cd backend/LF1-index-photos
       # zip everything
-      - zip -r LF1.zip .
+      # zip -r LF1.zip .
 
 artifacts:
   files:
-    - backend/LF1-index-photos/LF1.zip
+    - backend/LF1-index-photos/lambda_function.py
   discard-paths: yes
