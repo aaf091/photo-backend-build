@@ -32,4 +32,4 @@ secondary-artifacts:
     files:
       - LF2.zip
     name: BuildArtifactLF2
-    discard-paths: yes
+    discard-paths: yes 
